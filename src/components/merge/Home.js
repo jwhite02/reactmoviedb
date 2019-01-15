@@ -3,8 +3,6 @@ import Header from '../header/Header';
 import Footer from '../footer/Footer';
 import Body from '../content/Body';
 import axios from 'axios';
-import parser from 'fast-xml-parser';
-import shortid from 'shortid';
 import FormSearch from '../forms/FormSearch';
 import { Card, CardImg, CardBody, CardTitle, CardSubtitle, CardText, CardLink } from 'reactstrap';
 
@@ -30,11 +28,6 @@ class Home extends Component {
             console.log("in handChange " + event.target.value)
             
             this.setState({ value: event.target.value });
-
-            // const value = event.target.value;
-            // this.setState(prevState => {
-            //     return { value: prevState.value + value }
-            // });
 
             console.log("My drinkname " + this.state.drinkName);
         }
@@ -63,18 +56,8 @@ class Home extends Component {
     }
 
     componentDidMount = async () => {
-        let url = 'https://api.themoviedb.org/3/movie/popular?api_key=fcaa15e03606df98b2bdf920ab24801c&language=en&page=1';
-        const myData = await axios.get(url);
-        
-        console.log(myData.data.results[2]);
-
-        let jsondata;
         let drinksurl = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita';
-        let bookurl3 = 'http://cors-anywhere.herokuapp.com/https://www.goodreads.com/author/show/18541?format=xml&key=YD7ebrtO1W9wgyWqEWRqQ';
-
-        let bookurl = 'http://cors-anywhere.herokuapp.com/https://www.goodreads.com/group/search.xml?key=YD7ebrtO1W9wgyWqEWRqQ&q=adventure';
-        let zillow = 'http://cors-anywhere.herokuapp.com/http://www.zillow.com/webservice/GetRegionChildren.htm?zws-id=X1-ZWz1gtv23mlm2z_3if65&state=wa&city=seattle&childtype=neighborhood';
-
+        
          let drinks = await axios.get(drinksurl);
 
          this.setState({
@@ -86,16 +69,13 @@ class Home extends Component {
         console.log(myDrinks.drinks);
     }
 
-
     render() {
-        //console.log(this.state.renderDrinks);
         let someddrinks;
         let mapDrink;
         let strIngredient = "strIngredient";
         let testst = strIngredient + "1";
         console.log(testst);
         try {
-            //jsondata = parser.parse(this.state.drinksData.data);
             if (this.state.drinksData2 !== null || undefined) {
                 if (this.state.drinksData2[0] === "No Match") {
                     someddrinks = [<div className="mx-auto" > <h1>No Match</h1> </div>];

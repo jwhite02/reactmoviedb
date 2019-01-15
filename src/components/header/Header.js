@@ -5,7 +5,7 @@ class Header extends Component {
         return (
             <div className="parallax-header parallax">
                 <div className="header d-flex align-content-center">
-                    <div className="header d-flex align-content-center"><h1>Mixed Spirits</h1></div>
+                    <div className="header d-flex "><h1 className="h1-font">Mixed Spirits</h1></div>
                 </div>
             </div>
         );
