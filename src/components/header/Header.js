@@ -3,8 +3,10 @@ import React, { Component } from 'react';
 class Header extends Component {
     render() {
         return (
-            <div>
-                
+            <div className="parallax-header parallax">
+                <div className="header d-flex align-content-center">
+                    <div className="header d-flex align-content-center"><h1>Spirits</h1></div>
+                </div>
             </div>
         );
     }
