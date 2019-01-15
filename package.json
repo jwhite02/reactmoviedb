@@ -2,10 +2,12 @@
   "name": "mymoviedb",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://jwhite02.github.io/reactmoviedb/",
   "dependencies": {
     "axios": "^0.18.0",
     "bootstrap": "^4.2.1",
     "fast-xml-parser": "^3.12.11",
+    "gh-pages": "^2.0.1",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-scripts": "2.1.3",
@@ -17,7 +19,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "sass": "sass --watch src/styles/scss:src/styles/css",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
