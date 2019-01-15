@@ -1,16 +1,16 @@
 {
   "main.css": "/reactmoviedb/static/css/main.06dba7bf.chunk.css",
-  "main.js": "/reactmoviedb/static/js/main.ccde969a.chunk.js",
-  "main.js.map": "/reactmoviedb/static/js/main.ccde969a.chunk.js.map",
+  "main.js": "/reactmoviedb/static/js/main.e3d8de8f.chunk.js",
+  "main.js.map": "/reactmoviedb/static/js/main.e3d8de8f.chunk.js.map",
   "static/css/1.793c3877.chunk.css": "/reactmoviedb/static/css/1.793c3877.chunk.css",
   "static/js/1.9bd38279.chunk.js": "/reactmoviedb/static/js/1.9bd38279.chunk.js",
   "static/js/1.9bd38279.chunk.js.map": "/reactmoviedb/static/js/1.9bd38279.chunk.js.map",
   "runtime~main.js": "/reactmoviedb/static/js/runtime~main.f42b22ae.js",
   "runtime~main.js.map": "/reactmoviedb/static/js/runtime~main.f42b22ae.js.map",
-  "static/css/main.06dba7bf.chunk.css.map": "/reactmoviedb/static/css/main.06dba7bf.chunk.css.map",
-  "static/media/index.css": "/reactmoviedb/static/media/moss-436037-unsplash.1fd1ac69.jpg",
   "static/css/1.793c3877.chunk.css.map": "/reactmoviedb/static/css/1.793c3877.chunk.css.map",
+  "static/media/index.css": "/reactmoviedb/static/media/moss-436037-unsplash.1fd1ac69.jpg",
+  "static/css/main.06dba7bf.chunk.css.map": "/reactmoviedb/static/css/main.06dba7bf.chunk.css.map",
   "index.html": "/reactmoviedb/index.html",
-  "precache-manifest.027c092fecab9d8bd8c99934015c1b38.js": "/reactmoviedb/precache-manifest.027c092fecab9d8bd8c99934015c1b38.js",
+  "precache-manifest.fff601c27058d9da505eb05f451e0f04.js": "/reactmoviedb/precache-manifest.fff601c27058d9da505eb05f451e0f04.js",
   "service-worker.js": "/reactmoviedb/service-worker.js"
 }
